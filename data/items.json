@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Alpenglow Ridge",
+    "category": "Mountains",
+    "timeOfDay": "dusk",
+    "location": "Dolomites, Italy",
+    "image": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?auto=format&fit=crop&w=1200&q=80",
+    "description": "The last light of the day strikes the peaks first and leaves them last, painting the limestone a deep rose-gold for a few fleeting minutes.",
+    "funFact": "Alpenglow isn't direct sunlight — it's light scattered back onto the peaks by particles in the air after the sun has already dropped below the horizon.",
+    "glossary": [
+      { "term": "limestone", "meaning": "A sedimentary rock made mostly of calcium carbonate, common in mountain ranges like the Dolomites." },
+      { "term": "Alpenglow", "meaning": "A pink or golden glow on mountain peaks caused by sunlight scattering in the atmosphere just before sunrise or after sunset." }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Understory Light",
+    "category": "Forest",
+    "timeOfDay": "day",
+    "location": "Olympic National Forest, USA",
+    "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+    "description": "Midday sun breaks through the canopy in shafts, lighting up moss and fern in a temperate rainforest that receives over 150 inches of rain a year.",
+    "funFact": "This canopy can be so dense that less than 1% of sunlight reaches the forest floor.",
+    "glossary": [
+      { "term": "canopy", "meaning": "The uppermost layer of a forest, formed by the spreading branches and leaves of the tallest trees." },
+      { "term": "temperate rainforest", "meaning": "A forest type found in cool coastal climates that receives very high annual rainfall, unlike a tropical rainforest." }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Low Tide Mirror",
+    "category": "Coast",
+    "timeOfDay": "dawn",
+    "location": "Big Sur, California",
+    "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
+    "description": "At first light, a receding tide leaves a thin sheet of water on the sand that turns the whole beach into a mirror for the sky.",
+    "funFact": "This mirror effect only lasts a few minutes each cycle, right as the water film thins to under a millimeter.",
+    "glossary": [
+      { "term": "tide", "meaning": "The regular rise and fall of sea level caused by the gravitational pull of the moon and sun." },
+      { "term": "mirror effect", "meaning": "When a very thin, still layer of water reflects the sky like glass, briefly turning the beach into a mirror." }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cirrus Over the Basin",
+    "category": "Desert",
+    "timeOfDay": "dusk",
+    "location": "Mojave Desert, USA",
+    "image": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
+    "description": "Dry, arid desert air carries almost no moisture to scatter light, so desert sunsets tend to burn a deeper, more saturated orange than anywhere else.",
+    "funFact": "Clear, dust-free desert air is exactly why desert sunsets often look more saturated than coastal ones.",
+    "glossary": [
+      { "term": "arid", "meaning": "Extremely dry, with little rainfall — the defining trait of a desert climate." },
+      { "term": "saturated", "meaning": "In color, how intense or pure a hue looks, as opposed to washed out or pale." }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Glacial Blue Hour",
+    "category": "Alpine Lake",
+    "timeOfDay": "night",
+    "location": "Lake Louise, Canada",
+    "image": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=80",
+    "description": "Once the sun is gone, glacial flour suspended in the lake keeps reflecting the last blue hour light of the sky long after the shore has gone dark.",
+    "funFact": "The lake's turquoise color comes from finely ground rock particles, called glacial flour, carried down from the glacier above.",
+    "glossary": [
+      { "term": "glacial flour", "meaning": "Finely ground rock dust created by a glacier grinding against bedrock, which gives glacial lakes their turquoise color." },
+      { "term": "blue hour", "meaning": "The period of twilight just before sunrise or after sunset when indirect sunlight gives the sky a deep blue tone." }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "First Light on the Firs",
+    "category": "Forest",
+    "timeOfDay": "dawn",
+    "location": "Black Forest, Germany",
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+    "description": "Fog pools in the low ground overnight, so the first sun of the day only touches the treetops, leaving the trunks still in shadow.",
+    "funFact": "The Black Forest gets its name from the density of its dark-needled conifers, which can make the canopy look almost black from a distance.",
+    "glossary": [
+      { "term": "conifers", "meaning": "Cone-bearing trees, usually evergreen, such as pines, firs, and spruces." },
+      { "term": "canopy", "meaning": "The uppermost layer of a forest, formed by the spreading branches and leaves of the tallest trees." }
+    ]
+  }
+]

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Golden Hour Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?auto=format&fit=crop&w=1600&q=80">
+      <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__scrim"></div>
+    <div class="hero__content">
+      <p class="eyebrow">field notes on light</p>
+      <h1 class="hero__title">The Golden<br />Hour Archive</h1>
+      <p class="hero__sub">A running record of where the light lands — dawn, day, dusk, and night. Tap any photograph to open its field note.</p>
+    </div>
+    <div class="horizon-line" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="archive">
+      <div class="archive__heading">
+        <h2>Recent entries</h2>
+        <p class="archive__count" id="entryCount"></p>
+      </div>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter by time of day">
+        <button class="filter-btn is-active" data-time="all">All</button>
+        <button class="filter-btn" data-time="dawn">Dawn</button>
+        <button class="filter-btn" data-time="day">Day</button>
+        <button class="filter-btn" data-time="dusk">Dusk</button>
+        <button class="filter-btn" data-time="night">Night</button>
+      </div>
+
+      <div class="gallery" id="gallery" aria-live="polite">
+        <!-- Cards are injected here by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact">
+    <div class="contact__inner">
+      <p class="eyebrow">get in touch</p>
+      <h2 class="contact__title">Questions about a photo or a place?</h2>
+      <div class="contact__links">
+        <a class="contact__link" href="mailto:nheojade30@gmail.com">
+          <span class="contact__link-label">Email</span>
+          <span class="contact__link-value">nheojade30@gmail.com</span>
+        </a>
+        <a class="contact__link" href="tel:09123456789">
+          <span class="contact__link-label">Call / Text</span>
+          <span class="contact__link-value">0912 345 6789</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Field note panel: slides in from the right when a photo is clicked -->
+  <aside class="panel" id="panel" aria-hidden="true">
+    <div class="panel__stripe" id="panelStripe"></div>
+    <button class="panel__close" id="panelClose" aria-label="Close field note">✕</button>
+    <img class="panel__image" id="panelImage" src="" alt="" />
+    <div class="panel__body">
+      <p class="panel__time" id="panelTime"></p>
+      <h3 class="panel__title" id="panelTitle"></h3>
+      <p class="panel__location" id="panelLocation"></p>
+      <p class="panel__description" id="panelDescription"></p>
+      <div class="panel__fact">
+        <p class="panel__fact-label">Field note</p>
+        <p class="panel__fact-text" id="panelFact"></p>
+      </div>
+    </div>
+  </aside>
+  <div class="panel__backdrop" id="panelBackdrop"></div>
+
+  <div class="term-tooltip" id="termTooltip" role="tooltip">
+    <p class="term-tooltip__word" id="termTooltipWord"></p>
+    <p class="term-tooltip__meaning" id="termTooltipMeaning"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

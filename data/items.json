@@ -82,5 +82,97 @@
       { "term": "conifers", "meaning": "Cone-bearing trees, usually evergreen, such as pines, firs, and spruces." },
       { "term": "canopy", "meaning": "The uppermost layer of a forest, formed by the spreading branches and leaves of the tallest trees." }
     ]
+  },
+  {
+    "id": 7,
+    "name": "Trailside Clearing",
+    "category": "Countryside",
+    "timeOfDay": "day",
+    "location": "Local trail",
+    "image": "images/trailside-clearing.jpg",
+    "description": "An overgrown clearing just off the path, where an old cargo bicycle has been left to rust among the weeds. Someone pauses mid-walk to point out something in the distance.",
+    "funFact": "Left alone, a metal-frame bicycle like this can take well over a decade to fully rust through in a humid, tropical climate.",
+    "glossary": [
+      { "term": "clearing", "meaning": "An open patch of land within a densely vegetated area, often formed where growth has been cut back or trampled down." }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Ridgeline Blue Hour",
+    "category": "Mountains",
+    "timeOfDay": "dusk",
+    "location": "Mountain viewpoint",
+    "image": "images/ridgeline-blue-hour.jpg",
+    "description": "A silhouette looks out over layered ridgelines toward a coastline in the distance, right as the last warm color drains from the horizon into deep blue.",
+    "funFact": "Blue hour gets its color because, at that low sun angle, mostly blue wavelengths of light are left scattering through the atmosphere.",
+    "glossary": [
+      { "term": "blue hour", "meaning": "The period of twilight just before sunrise or after sunset when indirect sunlight gives the sky a deep blue tone." },
+      { "term": "ridgeline", "meaning": "The line formed by the highest points along a mountain range or hill chain." }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Coastal Overlook",
+    "category": "Coast",
+    "timeOfDay": "dusk",
+    "location": "Hillside overlook",
+    "image": "images/coastal-overlook.jpg",
+    "description": "The sun drops toward the sea through scattered clouds, framed by a forested hillside with the coastline and open water laid out below.",
+    "funFact": "The gold path stretching across the water toward the sun is called a glitter path — it forms when sunlight reflects off countless small ripples.",
+    "glossary": [
+      { "term": "glitter path", "meaning": "The shimmering band of reflected light that stretches across water toward the sun, caused by light bouncing off small waves." }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Waterfront Sunset",
+    "category": "Waterfront",
+    "timeOfDay": "dusk",
+    "location": "Waterfront",
+    "image": "images/waterfront-sunset.jpg",
+    "description": "The sun burns a deep red as it nears the horizon over calm water, silhouetting the structures and treeline along the shore.",
+    "funFact": "The sun looks red near the horizon because its light has to pass through much more atmosphere at that angle, scattering out the blue wavelengths first.",
+    "glossary": [
+      { "term": "horizon", "meaning": "The line where the sky appears to meet the earth or sea, as far as the eye can see." }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Golden Hills",
+    "category": "Grassland",
+    "timeOfDay": "dusk",
+    "location": "Tuscany, Italy",
+    "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?auto=format&fit=crop&w=1200&q=80",
+    "description": "Rolling hills turn deep gold as the low sun rakes sideways across the grass, throwing long shadows down every furrow.",
+    "funFact": "This raking light is often called the golden hour, and photographers plan entire shoots around the narrow window it lasts.",
+    "glossary": [
+      { "term": "golden hour", "meaning": "The period shortly after sunrise or before sunset when sunlight is soft, warm, and low in the sky." }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Waterfall Understory",
+    "category": "Forest",
+    "timeOfDay": "day",
+    "location": "Plitvice Lakes, Croatia",
+    "image": "https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?auto=format&fit=crop&w=1200&q=80",
+    "description": "A waterfall cuts through mossy rock in a forest so dense with spray that the air itself seems to glow green.",
+    "funFact": "The constant mist from waterfalls like this creates its own microclimate, letting moss and ferns grow that couldn't survive anywhere else nearby.",
+    "glossary": [
+      { "term": "microclimate", "meaning": "A small area with weather conditions noticeably different from the region around it, often caused by local features like water or shade." }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Open Water Sunset",
+    "category": "Ocean",
+    "timeOfDay": "dusk",
+    "location": "Open ocean",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+    "description": "No coastline in sight — just the sun sinking into open water, with waves catching the last color before dark.",
+    "funFact": "Sunsets over open water often look more vivid than land-based ones, since there's far less dust in the air to dull the color.",
+    "glossary": [
+      { "term": "open water", "meaning": "A stretch of sea or lake far enough from shore that no coastline is visible." }
+    ]
   }
 ]

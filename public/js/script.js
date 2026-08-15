@@ -185,4 +185,64 @@ filterButtons.forEach((btn) => {
   });
 });
 
+// ---- Copy email / phone buttons ----
+
+document.querySelectorAll(".copy-btn").forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    const value = btn.dataset.copy;
+    try {
+      await navigator.clipboard.writeText(value);
+    } catch {
+      // Clipboard API unavailable (e.g. no HTTPS) — fall back silently.
+    }
+    const original = btn.textContent;
+    btn.textContent = "Copied!";
+    btn.classList.add("is-copied");
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.classList.remove("is-copied");
+    }, 1500);
+  });
+});
+
+// ---- Feedback form ----
+
+const feedbackForm = document.getElementById("feedbackForm");
+const feedbackSubmit = document.getElementById("feedbackSubmit");
+const feedbackStatus = document.getElementById("feedbackStatus");
+
+feedbackForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("feedbackName").value;
+  const email = document.getElementById("feedbackEmail").value;
+  const message = document.getElementById("feedbackMessage").value;
+
+  feedbackSubmit.disabled = true;
+  feedbackStatus.textContent = "Sending...";
+  feedbackStatus.className = "feedback-status";
+
+  try {
+    const res = await fetch("/api/feedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    });
+
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}));
+      throw new Error(data.error || "Something went wrong.");
+    }
+
+    feedbackForm.reset();
+    feedbackStatus.textContent = "Thanks — your feedback was sent.";
+    feedbackStatus.className = "feedback-status is-success";
+  } catch (err) {
+    feedbackStatus.textContent = err.message || "Couldn't send feedback. Try again.";
+    feedbackStatus.className = "feedback-status is-error";
+  } finally {
+    feedbackSubmit.disabled = false;
+  }
+});
+
 loadItems();
